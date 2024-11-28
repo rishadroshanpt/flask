@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+</head>
+<body>
+    <h1>INDEX PAGE</h1>
+    <img src="{{ url_for('static',filename='images/1.jpg') }}" alt="" width="900" height="500">
+    <form action="" method="post">
+        <input type="text" name="name" placeholder="Enter your name" id="">
+        <input type="number" name="age" placeholder="Enter your age" id="">
+        <input type="submit" value="Add">
+    </form>
+    <a href="/second"><h2>Next Page</h2></a>
+</body>
+</html>
